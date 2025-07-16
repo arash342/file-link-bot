@@ -58,5 +58,4 @@ async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
 if __name__ == '__main__':
     keep_alive()
     app = ApplicationBuilder().token(TOKEN).build()
-    app.add_handler(MessageHandler(filters.ALL, handle_file))
-    app.run_polling()
+    app.add_handler(MessageHandler
